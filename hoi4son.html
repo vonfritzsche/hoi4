@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoI4 Maceram</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png'); /* Almanya bayrağı */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8; /* Arka planın opaklığını ayarlamak için */
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7); /* İçerik bölümlerinin arka planını koyulaştırmak için */
+        }
+        .country-info {
+            display: none;
+            margin-top: 20px;
+        }
+        .country-link {
+            color: yellow;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleCountryInfo(country) {
+            const info = document.getElementById(country);
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hoşgeldiniz Führerim!</h1>
+        <h2>Nasılsınız Führerim?</h2>
+        <h3>Emirleriniz,Führerim!</h3>
+    </header>
+    <nav>
+        <a href="#biografi">Biyografi</a>
+        <a href="#deneyimlerim">Deneyimlerim</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+    <section id="biografi">
+        <h2>Biyografim</h2>
+        <p>Küçüklüğümden beri strateji oyunlarına büyük bir ilgim vardı. Çocukken oyun konsollarında oynadığım savaş ve strateji oyunları, benim için sadece bir eğlence aracı değil, aynı zamanda düşünme ve planlama yeteneklerimi geliştirdiğim bir platform oldu. Oyun dünyasına olan tutkum, zamanla daha derin ve kapsamlı strateji oyunlarına yönelmemi sağladı.</p>
+        <p>Bir gün, bir arkadaşım HoI4'ten bahsetti. İlk başta ismi biraz garip gelse de, oyun hakkında dinlediğim her şey dikkatimi çekti. Özellikle savaş stratejileri, ülkelerin yönetimi ve tarihsel olayların yeniden yaşanması fikri beni çok heyecanlandırdı. Arkadaşımın tavsiyesi üzerine oyunu almaya karar verdim ve 2022 yazında oynamaya başladım.</p>
+        <p>İlk başta zorluklar yaşasam da, zamanla oyunun derinliklerini keşfettim ve ona olan ilgim katlanarak arttı. Oyunda yaşadığım her deneyim, beni daha iyi bir stratejist olma yolunda ilerletti. Arkadaşlarım ile birlikte oynarken, stratejik hamleler yapmanın ve geçmişteki büyük savaşların nasıl yeniden yaşanabileceğini görmek benim için büyük bir keyif kaynağı oldu.</p>
+        <p>Günümüzde HoI4, benim için bir hobi olmanın ötesine geçti. Strateji oyunları ile geçirdiğim zamanlar, stres atmak ve eğlenmek için mükemmel bir yol sunuyor. Fakat, bazen yoğun oyun seanslarının ardından yorgun hissediyorum ve belki de bir süre ara verme zamanı gelmiştir. Ancak, strateji oyunları tutkumun ne kadar derin olduğunu düşününce, bu macerayı bırakmak da bir o kadar zor görünüyor.</p>
+    </section>
+    <section id="deneyimlerim">
+        <h2>HoI4 Deneyimlerim</h2>
+        <p>2000 saatlik HoI4 deneyimim var. Oyuna 2022 yazında başladım, arkadaş tavsiyesi üzerine çok mutlu bir şekilde oyuna başladım. Yorgun ve bitmiş şekilde bırakmayı düşünüyorum.</p>
+        <p>Oynadığım ülkeler hakkında daha fazla bilgi edinmek için aşağıdaki ülke isimlerine tıklayabilirsiniz:</p>
+        <ul>
+            <li class="country-link" onclick="toggleCountryInfo('greece-info')">Yunanistan</li>
+            <li class="country-link" onclick="toggleCountryInfo('germany-info')">Nazi Almanyası</li>
+            <li class="country-link" onclick="toggleCountryInfo('turkey-info')">Türkiye</li>
+        </ul>
+        
+        <div id="greece-info" class="country-info">
+            <h3>Yunanistan</h3>
+            <p>Yunanistan, HoI4'te stratejik olarak oldukça ilginç bir ülke. 1936 yılında, güçlü bir askeri ve siyasi liderlik ile Balkanlar'daki rolünü artırma fırsatına sahip. Oyunda, kaynak yönetimi ve uluslararası ilişkilerde denge sağlamak önemlidir. Yunanistan, savaşın erken dönemlerinde düşmanlarının saldırılarını püskürtebilir ve kendi topraklarını koruyabilir.</p>
+        </div>
+        
+        <div id="germany-info" class="country-info">
+            <h3>Nazi Almanyası</h3>
+            <p>Nazi Almanyası, HoI4'te en güçlü ve en etkili ülkelerden biridir. Almanya, savaşın başlangıcında büyük bir askeri güce sahipken, geniş toprakları ele geçirme potansiyeli ile dikkat çeker. Oyun içinde, askeri strateji ve üretim yönetimi, Almanya'nın başarısı için kritik öneme sahiptir. Oyun boyunca, Almanya'nın genişlemesi ve savaşın seyrini değiştirmek için alınacak stratejik kararlar, büyük bir rol oynar.</p>
+        </div>
+        
+        <div id="turkey-info" class="country-info">
+            <h3>Türkiye</h3>
+            <p>Türkiye, HoI4'te hem Asya hem de Avrupa'da stratejik bir konuma sahip olan bir ülkedir. Oyunda, Türkiye'nin güçlü bir ordu oluşturma, topraklarını koruma ve komşu ülkelerle olan ilişkilerini yönetme kabiliyeti önemlidir. Türkiye, savaşın başlarında çeşitli ittifaklar kurma ve düşmanlarına karşı üstünlük sağlama fırsatına sahip olabilir. Ayrıca, Türkiye'nin kaynakları ve stratejik noktaları kontrol etme yeteneği, savaşın gidişatını etkileyebilir.</p>
+        </div>
+    </section>
+    <section id="iletisim">
+        <h2>İletişim</h2>
+        <p>E-posta: <a href="mailto:yigitdeniz727@gmail.com" style="color: white;">yigitdeniz727@gmail.com</a></p>
+        <p>Telefon: 05469135761</p>
+    </section>
+</body>
+</html>
